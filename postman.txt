@@ -1,0 +1,45 @@
+>mongodb://127.0.0.1:27017
+
+
+{
+"movieId": 101,
+"title": "Titanic",
+"releaseYear": 1997,
+"casts": [ "Kate Winslet", "Leonardo Dicaprio" ],
+"directors": ["James Cameron"]
+}
+
+{
+"movieId": 102,
+"title": "The Avengers",
+"releaseYear": 2012,
+"casts": [ "Chris Evans", "Robert Downey Jr.", "Cobie Smulders" ],
+"directors": ["Joss Whedon"]
+}
+
+{
+"movieId": 103,
+"title": "Men In Black",
+"releaseYear": 1997,
+"casts": [ "Will Smith", "Tommy Lee Jones", "Linda Fiorentino" ],
+"directors": ["Barry Sonnenfeld"]
+}
+
+{
+"movieId": 104,
+"title": "The Terminator",
+"releaseYear": 1984,
+"casts": [ "Arnold Schwarzenegger", "Michael Biehn", "Linda Hamilton" ],
+"directors": ["Barry Sonnenfeld"]
+}
+
+
+{
+    "username": "alexB",
+    "ratings":[
+        { "movieId": 101, "rating": 5 },
+        { "movieId": 102, "rating": 4 },
+        { "movieId": 103, "rating": 3 },
+        { "movieId": 104, "rating": 4 }
+    ]
+}
