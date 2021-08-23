@@ -1,0 +1,42 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9999/eureka 
+
+spring:
+  cloud:
+    gateway:
+#      routes:
+#      - id: movie-catalog-service
+#        uri: lb://MOVIE-CATALOG-SERVICE
+#        predicates:
+#        - Path=/api/v1/catalog/** 
+#        filters:
+#        - AddRequestHeader=secret-key, mysecret
+#        - AddResponseHeader=cookie, abcd123
+#        - name: CircuitBreaker
+#          args:
+#            name: curcuit1
+#            fallbackUri: forward:/fallback/movieCatalogService
+#      - id: currency-exchange-service
+#        uri: lb://CURRENCY-EXCHANGE-SERVICE
+#        predicates:
+#        - Path=/api/v1/currency-exchange/** 
+#        filters:
+#        - AddRequestHeader=secret-key, mysecret
+#        - AddResponseHeader=cookie, abcd123  
+#        - name: CircuitBreaker
+#          args: 
+#            name: circuit2
+#            fallbackUri: forward:/fallback/currencyExchangeService        
+      discovery:
+        locator:
+          enabled: true
+  application:
+    name: api-gateway
+        
+       
+        
